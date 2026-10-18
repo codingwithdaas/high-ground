@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High Ground</title>
+</head>
+<body>
+  <h1>High Ground</h1>
+  <p>Answer a few questions to build your family's flood go-bag checklist and evacuation plan.</p>
+
+  <form id="plan-form">
+    <label for="people">1. How many people live in your home?</label>
+    <input type="number" id="people" min="1" max="20" value="1" required>
+
+    <fieldset>
+      <legend>2. Any babies or toddlers?</legend>
+      <label><input type="radio" name="babies" value="yes"> Yes</label>
+      <label><input type="radio" name="babies" value="no" checked> No</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. Anyone who's elderly or has trouble walking?</legend>
+      <label><input type="radio" name="mobility" value="yes"> Yes</label>
+      <label><input type="radio" name="mobility" value="no" checked> No</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. Does anyone take daily medication?</legend>
+      <label><input type="radio" name="medication" value="yes"> Yes</label>
+      <label><input type="radio" name="medication" value="no" checked> No</label>
+    </fieldset>
+
+    <label for="pets">5. Do you have pets?</label>
+    <select id="pets">
+      <option value="none">None</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="other">Other</option>
+    </select>
+
+    <fieldset>
+      <legend>6. Does your household have a car?</legend>
+      <label><input type="radio" name="car" value="yes" checked> Yes</label>
+      <label><input type="radio" name="car" value="no"> No</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>7. Does anyone use medical equipment that needs electricity?</legend>
+      <label><input type="radio" name="equipment" value="yes"> Yes</label>
+      <label><input type="radio" name="equipment" value="no" checked> No</label>
+    </fieldset>
+
+    <button type="submit">Build my plan</button>
+  </form>
+
+  <section id="results" hidden>
+    <h2>Your Go-Bag Checklist</h2>
+    <ul id="checklist"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
