@@ -80,7 +80,7 @@ function buildPlan(event) {
   // super superrr important: evacuation plan (everyone)
   checklist.push("Pick a meeting place outside your home");
   checklist.push("Choose an out-of-area contact person");
-  checklist.push("Leave when officials say to — don't wait");
+  checklist.push("Leave when officials say to. Don't wait");
 
   // show checklist on page
   showChecklist(checklist);
